@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/">
+        <file>qml/BBaseListView.qml</file>
+        <file>qml/BBaseLabel.qml</file>
+        <file>qml/BBaseSplitViewContainer.qml</file>
+        <file>qml/BBaseFlickable.qml</file>
+        <file>qml/BBaseTextField.qml</file>
+        <file>qml/BLabeledTextField.qml</file>
+        <file>qml/BBaseControlBackground.qml</file>
+        <file>qml/BBaseRoundButton.qml</file>
+    </qresource>
+</RCC>

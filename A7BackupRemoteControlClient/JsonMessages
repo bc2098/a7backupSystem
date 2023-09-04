@@ -1,0 +1,94 @@
+список всех нод:
+
+{
+    "command": 1,
+    "dt": "17-08-2023T12:34:56Z",
+    "data":{
+        "nodes": [
+            { "id":"uuid1", "name":"name1" },
+            { "id":"uuid2", "name":"name2" },
+            { "id":"uuid3", "name":"name3" }
+        ]
+    }
+}
+
+обновление одной ноды:
+
+{
+    "command": 2,
+    "dt": "17-08-2023T12:34:56Z",
+    "data":{
+        "node": {
+            "id":"uuid1",
+            "name":"name1"
+        }
+    }
+}
+
+список бэкапов по ноде:
+
+{
+    "command": 3,
+    "dt": "17-08-2023T12:34:56Z",
+    "data":{
+        "node": {
+            "id":"uuid1",
+            "name":"name1",
+            "backups": [
+                { "id": "backup1id", "dt": "backup1dt", "size":10},
+                { "id": "backup2id", "dt": "backup2dt", "size":11},
+                { "id": "backup3id", "dt": "backup3dt", "size":12},
+                { "id": "backup4id", "dt": "backup4dt", "size":13},
+                { "id": "backup5id", "dt": "backup5dt", "size":14}
+            ]
+        }
+    }
+}
+
+новый бэкап добавлен в ноду
+{
+    "command": 4,
+    "dt": "17-08-2023T12:34:56Z",
+    "data": {
+        "node": {
+            "id":"dbfb4724-8e79-4439-9eb1-87af74cc18d6",
+            "backup": { "id": "backup6id", "dt": "backup6dt", "size":16 }
+        }
+    }
+}
+
+из ноды удален бэкап
+{
+    "command": 5,
+    "dt": "17-08-2023T12:34:56Z",
+    "data": {
+        "node": {
+            "id":"dbfb4724-8e79-4439-9eb1-87af74cc18d6",
+            "backup": { "id": "backup6id", "dt": "backup6dt", "size":16 }
+        }
+    }
+}
+
+добавлена новая нода
+{
+    "command": 6,
+    "dt": "17-08-2023T12:34:56Z",
+    "data": {
+        "node": {
+            "id":"dbfb4724-8e79-4439-9eb1-87af74cc18d6",
+            "name":"name4"
+        }
+    }
+}
+
+нода удалена
+{
+    "command": 7,
+    "dt": "17-08-2023T12:34:56Z",
+    "data": {
+        "node": {
+            "id":"dbfb4724-8e79-4439-9eb1-87af74cc18d6",
+            "name":"name4"
+        }
+    }
+}

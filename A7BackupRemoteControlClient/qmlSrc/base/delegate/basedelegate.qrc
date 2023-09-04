@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/">
+        <file>qml/BBaseListDelegate.qml</file>
+    </qresource>
+</RCC>

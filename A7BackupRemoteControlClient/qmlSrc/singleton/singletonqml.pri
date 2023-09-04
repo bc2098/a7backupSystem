@@ -1,0 +1,3 @@
+RESOURCES += \
+    $$PWD/singleton.qrc
+

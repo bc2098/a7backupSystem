@@ -1,0 +1,6 @@
+include($$PWD/backup/backupqml.pri)
+include($$PWD/base/baseqml.pri)
+include($$PWD/node/nodeqml.pri)
+include($$PWD/singleton/singletonqml.pri)
+include($$PWD/logic/logicqml.pri)
+include($$PWD/debug/debugqml.pri)
